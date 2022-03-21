@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Dictionaries>
+	<Dictionary Language="ChineseSimplified">
+		<!--Login Form-->>
+		<String Key="Game.Name" Value="无尽星海"/>
+		<String Key="Login.Title" Value="游戏登陆"/>
+		<String Key="Login.UserNameTitle" Value="账号"/>
+		<String Key="Login.PasswordTitle" Value="密码"/>
+		<String Key="Login.UserName" Value="请输入用户名"/>
+		<String Key="Login.Password" Value="请输入密码"/>
+		<String Key="Login.Login" Value="登录"/>
+		<String Key="Login.Register" Value="注册新用户"/>
+		<String Key="Login.RegisterSuccess" Value="注册成功"/>
+		<String Key="Login.EnterServer" Value="正在加入服务器..."/>
+		<String Key="Login.Prefix" Value="连接状态："/>
+		<String Key="Login.Normal" Value="连接状态：未连接"/>
+		<String Key="Login.Logining" Value="正在登录"/>
+		<String Key="Login.EnterGame" Value="正在进入游戏..."/>
+		<String Key="Login.Success" Value="已连接"/>
+		<String Key="Login.Failed" Value="服务器连接错误"/>
+		<String Key="Login.RequireUserName" Value="请输入用户名"/>
+		<String Key="Login.RequirePassword" Value="请输入密码"/>
+		<!--Menu Form-->
+		<String Key="Menu.SelectUniverse" Value="舰长，我们前往何方？"/>
+		<String Key="Menu.UniverseA" Value="前往第一宇宙"/>
+		<String Key="Menu.UniverseB" Value="前往第二宇宙"/>
+		<String Key="Menu.UniverseC" Value="前往第三宇宙"/>
+		<String Key="Menu.Locked" Value="宇宙未开放"/>
+		<String Key="Menu.UniverseInfo" Value="当前宇宙信息"/>
+		<String Key="Menu.EnterLobby" Value="前往当前宇宙"/>
+		<!--Lobby Form-->
+		<String Key="Lobby.Loading" Value="加载中..."/>
+		<String Key="Lobby.Connecting" Value="连接中..."/>
+		<String Key="Lobby.ID" Value="昵称："/>
+		<String Key="Lobby.Energy" Value="体力："/>
+		<String Key="Lobby.Chat.All" Value="所有"/>
+		<String Key="Lobby.Chat.Global" Value="广播"/>
+		<String Key="Lobby.Chat.Private" Value="私聊"/>
+		<String Key="Lobby.Chat.Receiver" Value="0"/>
+		<String Key="Lobby.Chat.Input" Value="点击输入聊天信息"/>
+		<String Key="Lobby.Chat.Send" Value="发送"/>
+		<String Key="Lobby.OpenBackpack" Value="打开背包"/>
+		<String Key="Lobby.GameEnterList" Value="游戏入口列表"/>
+		<!--Prepare Form-->
+		<String Key="Prepare.EnterGame" Value="进入游戏"/>
+		<String Key="Prepare.Character" Value="角色"/>
+		<String Key="Prepare.Attribute" Value="属性"/>
+		<String Key="Prepare.Weapon" Value="武器"/>
+		<String Key="Prepare.Information" Value="资料"/>
+		<String Key="Prepare.Exchange" Value="替换"/>
+		<String Key="Prepare.AttrTitle" Value="属性信息"/>
+		<String Key="Prepare.AttrDescription" Value="属性信息描述属性信息描述属性信息描述属性信息描述属性信息描述属性信息描述"/>
+		<String Key="Prepare.SelectWeapon" Value="武器选择"/>
+		<!--Game Form-->
+		<String Key="Game.Hint" Value="操作提示：拖动摇杆或WASD - 手动移动 右屏幕滑动或鼠标移动 - 移动视角 按钮A或鼠标左键- 手动砍树 按钮B或鼠标右键 - 自动寻找最近树木并砍伐"/>
+		<String Key="Game.Bag" Value="背包"/>
+		<String Key="Game.Chat" Value="聊天"/>
+		<String Key="Game.Chat.Title" Value="聊天室"/>
+		<String Key="Game.Chat.Hint" Value="Tips：输入用户ID时为私聊 不输入用户ID时为全局聊天"/>
+		<String Key="Game.Chat.InputContent" Value="点击输入聊天信息"/>
+		<String Key="Game.Chat.InputUserId" Value="用户ID"/>
+		<String Key="Game.Chat.Send" Value="发送"/>
+		<String Key="Game.Chat.Global" Value="广播"/>
+		<String Key="Game.Chat.Private" Value="私聊"/>
+		<String Key="Game.Chat.TalkSelf" Value="我对 {0} 说："/>
+		<String Key="Game.Chat.TalkToYou" Value="对 你 说："/>
+		<String Key="Game.Chat.TalkToAll" Value="对 大家 说："/>
+		<String Key="Game.Chat.All" Value="大家"/>
+		<String Key="Game.Chat.Clear" Value="清除聊天"/>
+
+		<!--Backpack Popup-->>
+		<String Key="Backpack.Title" Value="背包"/>
+		<String Key="Backpack.Confirm" Value="确定"/>
+		<String Key="Backpack.Success" Value="替换成功！"/>
+	</Dictionary>
+</Dictionaries>

@@ -1,0 +1,18 @@
+#	界面配置表					
+#	Id		AssetName	UIGroupName	AllowMultiInstance	PauseCoveredUIForm
+#	int		string	string	bool	bool
+#	界面编号	策划备注	资源名称	界面组名称	是否允许多个界面实例	是否暂停被其覆盖的界面
+	1	对话框	UIPopup_Dialog	Popup	TRUE	TRUE
+	2	背包框	UIPopup_Backpack	Popup	TRUE	TRUE
+	100	登录界面	UIForm_Login	Form	FALSE	TRUE
+	200	目录界面	UIForm_Menu	Form	FALSE	TRUE
+	300	大厅界面	UIForm_Lobby	Form	FALSE	TRUE
+	400	游戏准备界面	UIForm_Prepare	Form	FALSE	TRUE
+	500	游戏界面	UIForm_Game	Form	FALSE	TRUE
+	1001	移动端对话框	UIPopup_Dialog_Mobile	Popup	TRUE	TRUE
+	1002	移动端背包框	UIPopup_Backpack_Mobile	Popup	TRUE	TRUE
+	1100	移动端登陆界面	UIForm_Login_Mobile	Form	FALSE	TRUE
+	1200	移动端目录界面	UIForm_Menu_Mobile	Form	FALSE	TRUE
+	1300	移动端大厅界面	UIForm_Lobby_Mobile	Form	FALSE	TRUE
+	1400	移动端游戏准备界面	UIForm_Prepare_Mobile	Form	FALSE	TRUE
+	1500	移动端游戏界面	UIForm_Game_Mobile	Form	FALSE	TRUE

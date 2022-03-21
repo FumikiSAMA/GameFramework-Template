@@ -1,0 +1,10 @@
+#	场景配置表		
+#	Id		AssetName
+#	int		string
+#	场景编号	备注	资源名称
+	0	初始化场景	Init
+	1	登录场景	Login
+	2	目录场景	Menu
+	3	大厅场景	Lobby
+	4	游戏准备场景	Prepare
+	5	测试游戏场景	TestGame

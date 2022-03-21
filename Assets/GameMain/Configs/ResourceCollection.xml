@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <ResourceCollection>
+    <Resources>
+      <Resource Name="Configs" LoadType="0" Packed="True" />
+      <Resource Name="DataTables" LoadType="0" Packed="True" />
+      <Resource Name="Entities" LoadType="0" Packed="True" />
+      <Resource Name="Fonts" LoadType="0" Packed="True" />
+      <Resource Name="Localization" LoadType="0" Packed="True" />
+      <Resource Name="Models" LoadType="0" Packed="True" />
+      <Resource Name="Scenes" LoadType="0" Packed="True" />
+      <Resource Name="Shaders" LoadType="0" Packed="True" />
+      <Resource Name="UI" LoadType="0" Packed="True" />
+    </Resources>
+    <Assets>
+      <Asset Guid="0682d52fc38224135a5c0444cb2ab8c5" ResourceName="Fonts" />
+      <Asset Guid="089962e5e0d93ab4d8ae0326fd3499b0" ResourceName="UI" />
+      <Asset Guid="095b5c1fdc4d14325a36aea89a1bdd85" ResourceName="UI" />
+      <Asset Guid="0d7dd97276e9d4ec9b2314f884b85c58" ResourceName="UI" />
+      <Asset Guid="1053b0070685be347ab58587156842dc" ResourceName="Localization" />
+      <Asset Guid="128e987d567d4e2c824d754223b3f3b0" ResourceName="Shaders" />
+      <Asset Guid="12fd160b693244d2d85904474143a5c6" ResourceName="UI" />
+      <Asset Guid="14869ac0d4433f04db1704e39d03412e" ResourceName="Localization" />
+      <Asset Guid="14eb328de4b8eb245bb7cea29e4ac00b" ResourceName="Shaders" />
+      <Asset Guid="1561ecb137928c0429e19e82010af449" ResourceName="UI" />
+      <Asset Guid="16fff9a69668940c48e6d10c99f861bc" ResourceName="UI" />
+      <Asset Guid="1d3b117fe337f4f1cbbde9e581ca8dac" ResourceName="UI" />
+      <Asset Guid="1e3b057af24249748ff873be7fafee47" ResourceName="Shaders" />
+      <Asset Guid="24689e7c107f74b06af9a77688b87c93" ResourceName="UI" />
+      <Asset Guid="25fddc8efe51b429ea7a0297820517c4" ResourceName="UI" />
+      <Asset Guid="276d624a462c9476eb5be8c3421a3008" ResourceName="UI" />
+      <Asset Guid="2a268b5d0a08df2448a86f1738e994bd" ResourceName="Entities" />
+      <Asset Guid="2b3e15228c0f54663865e12c709f2e6f" ResourceName="UI" />
+      <Asset Guid="2e11319415c2a47a5832ba932539b94d" ResourceName="UI" />
+      <Asset Guid="315e8ed2db27c254cb3366ff0793cd90" ResourceName="DataTables" />
+      <Asset Guid="372a8b1e52bedc64b9207b12d167afaa" ResourceName="DataTables" />
+      <Asset Guid="39b2cac9fe02244e6a5070eaccc3308d" ResourceName="UI" />
+      <Asset Guid="3a7dfc44f39c36d439164487dfab53b2" ResourceName="Entities" />
+      <Asset Guid="3ba17be7f08604b1a883decf90016f48" ResourceName="UI" />
+      <Asset Guid="43654e719a0634d3ca607a34f08a81b4" ResourceName="UI" />
+      <Asset Guid="44c8db52241385c45bbb14a1718f17bf" ResourceName="Configs" />
+      <Asset Guid="4606b02596033406ba86b7321e121e0b" ResourceName="UI" />
+      <Asset Guid="4669ad94612a947ba8660d2187d83ae7" ResourceName="UI" />
+      <Asset Guid="48bb5f55d8670e349b6e614913f9d910" ResourceName="Shaders" />
+      <Asset Guid="497df464dda414cc183d50d0c194dd72" ResourceName="Models" />
+      <Asset Guid="4ab14a1a16e0cbd45bc8c7d7d3103bdb" ResourceName="Scenes" />
+      <Asset Guid="4adb2ec56b22deb42abb4ceef74a609e" ResourceName="UI" />
+      <Asset Guid="50f19608e3503e64a80897ec0020ec2b" ResourceName="Scenes" />
+      <Asset Guid="57f93c05f800cdd42b51ab1b8e327c20" ResourceName="DataTables" />
+      <Asset Guid="5898c5621fdaa41f1b05dfd189f826ed" ResourceName="UI" />
+      <Asset Guid="5dcd89912e222bf4c87f76db4044bc5e" ResourceName="Localization" />
+      <Asset Guid="626d02d0edcb64242a120905c39533c5" ResourceName="UI" />
+      <Asset Guid="68e6db2ebdc24f95958faec2be5558d6" ResourceName="Shaders" />
+      <Asset Guid="6e5963935f886487dace91ac4afa9446" ResourceName="UI" />
+      <Asset Guid="6fd40d1acb07d4516a33ee05413e501a" ResourceName="UI" />
+      <Asset Guid="73205791dda0949f480c90600fe16a2e" ResourceName="UI" />
+      <Asset Guid="73353e207a05fff45b8fcc2e51025b76" ResourceName="Scenes" />
+      <Asset Guid="79f649bbea7ad48d39055d2033b79324" ResourceName="UI" />
+      <Asset Guid="7fd11dc5d29076d469d414dec2818f11" ResourceName="Configs" />
+      <Asset Guid="825649d2f8f2d4d849ddc869480947c7" ResourceName="UI" />
+      <Asset Guid="83eeb858351574746871daba2094c250" ResourceName="Configs" />
+      <Asset Guid="847d9fb9c01d4490d85537d2802eb4a9" ResourceName="UI" />
+      <Asset Guid="85187c2149c549c5b33f0cdb02836b17" ResourceName="Shaders" />
+      <Asset Guid="8a431c92b71af400e8886ed8b2fa7fd9" ResourceName="UI" />
+      <Asset Guid="8e114ded6a865324588170636872943c" ResourceName="DataTables" />
+      <Asset Guid="930cf26fde57e44c79a0bab900946e90" ResourceName="UI" />
+      <Asset Guid="930d373a3b0fd4da5ab1db2a04ad8921" ResourceName="UI" />
+      <Asset Guid="97d117308cf86924289e81e7e71dd5dd" ResourceName="DataTables" />
+      <Asset Guid="9abd69fd12b7c534d864226558e8806c" ResourceName="Scenes" />
+      <Asset Guid="9b433f0bb7fef6f4085c316a0d88c307" ResourceName="DataTables" />
+      <Asset Guid="9be2e1e45f4edd74c8764538ad306b78" ResourceName="Localization" />
+      <Asset Guid="9c3faac13c8ced84a9f3018303b7bb98" ResourceName="DataTables" />
+      <Asset Guid="9e18a4e5ebb86417db7195d74d6bcab5" ResourceName="UI" />
+      <Asset Guid="a02a7d8c237544f1962732b55a9aebf1" ResourceName="Shaders" />
+      <Asset Guid="a33e23ae848110243820cda82120b105" ResourceName="DataTables" />
+      <Asset Guid="a3dc6d8b76d1b4fb08102fde84459211" ResourceName="UI" />
+      <Asset Guid="a689f79b66cb548838fc9864513e81f4" ResourceName="UI" />
+      <Asset Guid="a71f8bb1b1b2c51438e2bafc884cb02c" ResourceName="DataTables" />
+      <Asset Guid="a943a291d69be43468ef3cd791a074bd" ResourceName="UI" />
+      <Asset Guid="aa10b5fe5ebeaa140984900c250efd1a" ResourceName="Scenes" />
+      <Asset Guid="af1bff15f9dde4d148e4c4cd78f73a3e" ResourceName="Models" />
+      <Asset Guid="b6bdb240225284ffa93aba3b39c0cf7b" ResourceName="UI" />
+      <Asset Guid="b9211d7ff0e9c4f7aa2a18c78de782ca" ResourceName="UI" />
+      <Asset Guid="bc1ede39bf3643ee8e493720e4259791" ResourceName="Shaders" />
+      <Asset Guid="bc507fe67d3e34cf5bb425cfbb624043" ResourceName="UI" />
+      <Asset Guid="bd12c472ff320d446bf1d0b2c2967d8d" ResourceName="UI" />
+      <Asset Guid="bf67b46a8fb2e4f569255d3a21c2b9bd" ResourceName="UI" />
+      <Asset Guid="c1096b102a9914cd3b86edac503b6c6c" ResourceName="Entities" />
+      <Asset Guid="c29cef80c4b6a42528d4b444ba6f75fd" ResourceName="UI" />
+      <Asset Guid="c59c0ffc08a674a2b8a0dbeaa4c778be" ResourceName="UI" />
+      <Asset Guid="c8d12adcee749c344b8117cf7c7eb912" ResourceName="Shaders" />
+      <Asset Guid="c917d848b37c8438a82b5a4cb9d5f945" ResourceName="UI" />
+      <Asset Guid="cbeffc7471dfd4bd7a0af78340f806d2" ResourceName="UI" />
+      <Asset Guid="cf81c85f95fe47e1a27f6ae460cf182c" ResourceName="Shaders" />
+      <Asset Guid="cf8451e15f360df4391ccddf62825a43" ResourceName="UI" />
+      <Asset Guid="cf856481e90b94f96816e16e75d23f25" ResourceName="UI" />
+      <Asset Guid="cfe53cf384344bd47a8680f8c5f97a7b" ResourceName="DataTables" />
+      <Asset Guid="d0ce161b86bde41349d38b42036e55e9" ResourceName="UI" />
+      <Asset Guid="d0cebce2759bf49b2aec451157c6724e" ResourceName="UI" />
+      <Asset Guid="d3ac163434ac749b7ab3dd186b1c30e0" ResourceName="Models" />
+      <Asset Guid="d6d098c445c304483af5f501b3065a30" ResourceName="UI" />
+      <Asset Guid="da3ed1e7e7c454db8acd87367985b52d" ResourceName="UI" />
+      <Asset Guid="da3f7c88fd0314e19bb28c243e3994c0" ResourceName="UI" />
+      <Asset Guid="dd632dc8c8c0744f5b46ca803a3a672c" ResourceName="UI" />
+      <Asset Guid="dd89cf5b9246416f84610a006f916af7" ResourceName="Shaders" />
+      <Asset Guid="de96ef719cedccc498bcf0443acc3b07" ResourceName="Configs" />
+      <Asset Guid="e32982aaea4da4c03bf25efdceb68092" ResourceName="UI" />
+      <Asset Guid="e3d10865c48ef4789913fa6fa054ecaa" ResourceName="UI" />
+      <Asset Guid="e4a209eabb50a4b4b92c6a5708081bcb" ResourceName="UI" />
+      <Asset Guid="e603b0446c7f2804db0c8dd0fb5c1af0" ResourceName="Shaders" />
+      <Asset Guid="e61aaf1f615ac40dfbe79a65960d4ad8" ResourceName="UI" />
+      <Asset Guid="ea8cededeaa80490ca6cc716ea81de5e" ResourceName="UI" />
+      <Asset Guid="eb9d8852529474af08cabc84961bde1f" ResourceName="UI" />
+      <Asset Guid="ec1ed271b9cb88b49ba1b7f83c336bbe" ResourceName="UI" />
+      <Asset Guid="ec8ff3674e4e945018786109f98fb672" ResourceName="UI" />
+      <Asset Guid="f03294877d29b4e26bf5c48e35694371" ResourceName="UI" />
+      <Asset Guid="f1561329345804cc8ba47b8ff911d678" ResourceName="UI" />
+      <Asset Guid="f18da8b669cdf3344ac0d95ea843b143" ResourceName="Entities" />
+      <Asset Guid="f2f97a713beae744181ba934f9c4113a" ResourceName="DataTables" />
+      <Asset Guid="f347f8784c62a4bd0a68461deefc1073" ResourceName="UI" />
+      <Asset Guid="f36b136edf064447d93c370fae2c9ee7" ResourceName="Models" />
+      <Asset Guid="f7aa5f4dc3818e0468ef204d9393f856" ResourceName="Scenes" />
+      <Asset Guid="f7ada0af4f174f0694ca6a487b8f543d" ResourceName="Shaders" />
+      <Asset Guid="fdb5edd099d06b045af609ba3172400a" ResourceName="DataTables" />
+      <Asset Guid="fe393ace9b354375a9cb14cdbbc28be4" ResourceName="Shaders" />
+    </Assets>
+  </ResourceCollection>
+</UnityGameFramework>
