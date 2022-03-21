@@ -5,14 +5,52 @@ using UnityGameFramework.Editor.ResourceTools;
 
 namespace Fumiki.Editor.BuildExtension
 {
-    // [Serializable]
-    // public enum Platform
-    // {
-    //     Windows,
-    //     Ios,
-    //     Android,
-    // }
-
+    [Serializable]
+    public enum Platform
+    {
+        Undefined = 0,
+        
+        /// <summary>
+        /// Windows 32位
+        /// </summary>
+        Windows = 1 << 0,
+        
+        /// <summary>
+        ///  Windows 64位
+        /// </summary>
+        Windows64 = 1 << 1,
+        
+        /// <summary>
+        /// MacOS
+        /// </summary>
+        MacOS = 1 << 2,
+        
+        /// <summary>
+        /// Linux
+        /// </summary>
+        Linux = 1 << 3,
+        
+        /// <summary>
+        /// iOS
+        /// </summary>
+        iOS = 1 << 4,
+        
+        /// <summary>
+        /// Android
+        /// </summary>
+        Android = 1 << 5,
+        
+        /// <summary>
+        /// Windows 商店
+        /// </summary>
+        WindowsStore = 1 << 6,
+        
+        /// <summary>
+        /// WebGL
+        /// </summary>
+        WebGL = 1 << 7,
+    }
+    
     [Serializable]
     public class VersionInfoData
     {
