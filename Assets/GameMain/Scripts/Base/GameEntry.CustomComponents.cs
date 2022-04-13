@@ -6,6 +6,7 @@ namespace Fumiki
         public static StaticResourceComponent StaticResource { get; private set; }
         public static TextureSetComponent TextureSet { get; private set; }
         public static TimerComponent Timer { get; private set; }
+        public static TimingWheelComponent TimingWheel { get; private set; }
         
         private void InitCustomComponents()
         {
@@ -13,6 +14,7 @@ namespace Fumiki
             StaticResource = UnityGameFramework.Runtime.GameEntry.GetComponent<StaticResourceComponent>();
             TextureSet = UnityGameFramework.Runtime.GameEntry.GetComponent<TextureSetComponent>();
             Timer = UnityGameFramework.Runtime.GameEntry.GetComponent<TimerComponent>();
+            TimingWheel = UnityGameFramework.Runtime.GameEntry.GetComponent<TimingWheelComponent>();
         }
     }
 }

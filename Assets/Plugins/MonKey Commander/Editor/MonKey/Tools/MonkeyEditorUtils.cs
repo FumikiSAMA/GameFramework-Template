@@ -257,7 +257,7 @@ namespace MonKey.Editor
             EditorApplication.update -= MonKeyEditorUpdate;
             EditorApplication.update += MonKeyEditorUpdate;
 
-#if UNITY_2019
+#if UNITY_2019_1_OR_NEWER
             SceneView.duringSceneGui -= OnSceneViewGUI;
             SceneView.duringSceneGui += OnSceneViewGUI;
 #else
@@ -423,7 +423,7 @@ namespace MonKey.Editor
             EditorApplication.update -= MonKeyEditorUpdate;
             EditorApplication.update += MonKeyEditorUpdate;
 
-#if UNITY_2019
+#if UNITY_2019_1_OR_NEWER
             SceneView.duringSceneGui -= OnSceneViewGUI;
             SceneView.duringSceneGui += OnSceneViewGUI;
 #else

@@ -47,6 +47,7 @@ namespace MonKey.Editor.Commands
 
                 return;
             }
+
             currentEditorPhysics = new EditorPhysicsSceneCommand(Object.FindObjectsOfType<Rigidbody>());
             MonkeyEditorUtils.AddSceneCommand(currentEditorPhysics);
 #endif
@@ -67,6 +68,7 @@ namespace MonKey.Editor.Commands
                 currentEditorPhysics2D.Stop();
                 return;
             }
+
             currentEditorPhysics2D = new EditorPhysics2DSceneCommand(Object.FindObjectsOfType<Rigidbody2D>());
             MonkeyEditorUtils.AddSceneCommand(currentEditorPhysics2D);
 #endif
@@ -184,7 +186,6 @@ namespace MonKey.Editor.Commands
                 }
 
 
-
                 previousAutoSimulation = Physics.autoSimulation;
                 Physics.autoSimulation = false;
                 timer = 0;
@@ -268,7 +269,6 @@ namespace MonKey.Editor.Commands
                 }
 
                 Undo.CollapseUndoOperations(id);
-
             }
 
             public override void OnSceneGUI()
@@ -344,18 +344,13 @@ namespace MonKey.Editor.Commands
 
                     if (i > maxSimSteps)
                     {
-
                         break;
                     }
 
 
                     i++;
-
                 }
-
             }
-
-
         }
 #endif
 
@@ -366,7 +361,14 @@ namespace MonKey.Editor.Commands
             private readonly List<GameObject> objectsWithAddedBody = new List<GameObject>();
             private readonly List<Rigidbody2D> cachedBodies = new List<Rigidbody2D>();
             private readonly List<Rigidbody2D> excludedBodies = new List<Rigidbody2D>();
-            private readonly bool previousAutoSimulation;
+
+#if UNITY_2020_1_OR_NEWER
+            private readonly SimulationMode2D previousAutoSimulation;
+
+#else
+                        private readonly bool previousAutoSimulation;
+#endif
+
 
             private readonly List<PositionRotation> previousPositionRotations = new List<PositionRotation>();
 
@@ -398,6 +400,7 @@ namespace MonKey.Editor.Commands
                         cachedBodies.Add(o.GetComponent<Rigidbody2D>());
                         continue;
                     }
+
                     o.AddComponent<Rigidbody2D>();
                     objectsWithAddedBody.Add(o);
                 }
@@ -421,9 +424,14 @@ namespace MonKey.Editor.Commands
                         excludedBodies.Add(body);
                     }
                 }
-
-                previousAutoSimulation = Physics2D.autoSimulation;
+#if UNITY_2020_1_OR_NEWER
+                previousAutoSimulation = Physics2D.simulationMode;
+                Physics2D.simulationMode = SimulationMode2D.Script;
+#else
+  previousAutoSimulation = Physics2D.autoSimulation;
                 Physics2D.autoSimulation = false;
+#endif
+
                 timer = 0;
             }
 
@@ -468,8 +476,8 @@ namespace MonKey.Editor.Commands
                     {
                         i++;
                         continue;
-
                     }
+
                     PositionRotation newPr = new PositionRotation(body.position, body.rotation);
                     body.gameObject.transform.position = previousPositionRotations[i].Position;
                     body.rotation = previousPositionRotations[i].Rotation;
@@ -487,14 +495,20 @@ namespace MonKey.Editor.Commands
                         i++;
                         continue;
                     }
+
                     Undo.RecordObject(body.transform, "position rotation");
                     body.gameObject.transform.position = previousPositionRotations[i].Position;
                     body.rotation = previousPositionRotations[i].Rotation;
                 }
-                Undo.CollapseUndoOperations(id);
 
-                Physics2D.autoSimulation = previousAutoSimulation;
+                Undo.CollapseUndoOperations(id);
+#if UNITY_2020_1_OR_NEWER
+                Physics2D.simulationMode = previousAutoSimulation;
                 currentEditorPhysics2D = null;
+#else
+                  Physics2D.autoSimulation = previousAutoSimulation;
+                currentEditorPhysics2D = null;
+#endif
             }
 
             public override void OnSceneGUI()
@@ -510,7 +524,6 @@ namespace MonKey.Editor.Commands
 
                     if (!body.IsSleeping())
                     {
-
                         GUI.color = MonkeyStyle.Instance.SearchFieldTextColor;
                         Handles.Label(body.transform.position, "Edit Mode Physics");
                     }
@@ -523,7 +536,6 @@ namespace MonKey.Editor.Commands
 
             public override void Update()
             {
-
                 if (!MonkeyEditorUtils.CurrentSceneView)
                     MonkeyEditorUtils.CurrentSceneView = SceneView.currentDrawingSceneView;
 
@@ -542,15 +554,9 @@ namespace MonKey.Editor.Commands
                 {
                     timer -= Time.fixedDeltaTime;
                     Physics2D.Simulate(Time.deltaTime);
-
                 }
-
             }
-
-
         }
 #endif
-
     }
 }
-

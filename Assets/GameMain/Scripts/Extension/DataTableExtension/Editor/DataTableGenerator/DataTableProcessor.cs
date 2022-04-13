@@ -397,7 +397,6 @@ namespace Fumiki.Editor.DataTableGenerator
                                 binaryWriter.Write(tableConfigBytes);
                                 tempStream.Seek(0, SeekOrigin.Begin);
                                 tempStream.CopyTo(fileStream);
-                                Debug.Log(fileStream.Length);
                             }
                         }
                     }

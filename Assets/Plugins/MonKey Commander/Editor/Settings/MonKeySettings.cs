@@ -125,6 +125,7 @@ public class MonKeySettings : Editor
     private void CheckHotKeyOptions()
     {
         DrawHeader("Custom Monkey Console Toggle HotKey");
+        EditorGUILayout.HelpBox("Unity's Shortcut Manager Offers more options, please use it in priority (Edit/Shortcuts..)", MessageType.None);
         DrawKeyCodeField();
         DrawKeyCodeHints();
     }

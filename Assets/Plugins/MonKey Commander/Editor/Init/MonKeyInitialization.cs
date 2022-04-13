@@ -6,12 +6,7 @@ using UnityEngine;
 
 public class MonKeyInitialization : MonoBehaviour
 {
-    public static readonly string MonKeyVersion = "2021.0.3";
-
-    private static string defaultDLLInstallPath = "Assets/Plugins/" +
-                                                  "MonKey Commander/Editor/Bin/";
-
-    private static string[] supportedVersions = new[] {"2018_3", "2018_2", "2018", "2017", "2019"};
+    public static readonly string MonKeyVersion = "2021.0.6";
 
     /// <summary>
     /// used in case you change the version of Unity, 
@@ -19,7 +14,6 @@ public class MonKeyInitialization : MonoBehaviour
     /// </summary>
     public static void InitMonKey()
     {
-        EnsureGoodDll();
         MonKeySettings.InitSettings();
         CommandManager.Instance.RetrieveAllCommands();
     }
@@ -38,74 +32,5 @@ public class MonKeyInitialization : MonoBehaviour
     public static void OpenPanel()
     {
         InitAndShowStartupPanel();
-    }
-
-    private static void EnsureGoodDll()
-    {
-        Object dll = null;
-        string currentVersion;
-
-#if UNITY_2019_1_OR_NEWER
-        currentVersion = "2019";
-#elif UNITY_2018_3_OR_NEWER
-       currentVersion = "2018_3";
-#elif UNITY_2018_2_OR_NEWER
-       currentVersion = "2018_2";
-#elif UNITY_2018_1_OR_NEWER
-             currentVersion = "2018";
-#elif UNITY_2017_1_OR_NEWER
-       currentVersion = "2017";
-#endif
-        dll = AssetDatabase.LoadAssetAtPath<Object>(defaultDLLInstallPath +
-                                                    currentVersion + "/MonKey Commander." + currentVersion);
-
-        if (dll != null)
-        {
-            ResetDlls();
-
-            if (File.Exists(defaultDLLInstallPath + currentVersion + "/MonKey Commander.dll"))
-                File.Delete(defaultDLLInstallPath + currentVersion + "/MonKey Commander.dll");
-
-            File.Move(defaultDLLInstallPath +
-                      currentVersion + "/MonKey Commander." + currentVersion,
-                defaultDLLInstallPath + currentVersion + "/MonKey Commander.dll");
-            File.Delete(defaultDLLInstallPath +
-                        currentVersion + "/MonKey Commander." + currentVersion + ".meta");
-
-            AssetDatabase.Refresh();
-        }
-    }
-
-    public static void ResetDlls()
-    {
-        foreach (var version in supportedVersions)
-        {
-            Object dll = AssetDatabase.LoadAssetAtPath<Object>(defaultDLLInstallPath
-                                                               + version + "/MonKey Commander." + version);
-            if (!dll)
-            {
-                var missingDll = version;
-
-                Object oldDll = AssetDatabase.LoadAssetAtPath<Object>(
-                    defaultDLLInstallPath + missingDll + "/MonKey Commander.dll");
-
-                if (oldDll)
-                {
-                    if (File.Exists(defaultDLLInstallPath + missingDll + "/MonKey Commander." + missingDll))
-                    {
-                        File.Delete(defaultDLLInstallPath + missingDll + "/MonKey Commander.dll");
-                        File.Delete(defaultDLLInstallPath + missingDll + "/MonKey Commander.dll.meta");
-                    }
-                    else
-                    {
-                        File.Move(defaultDLLInstallPath + missingDll + "/MonKey Commander.dll",
-                            defaultDLLInstallPath + missingDll + "/MonKey Commander." + missingDll);
-                        File.Delete(defaultDLLInstallPath + missingDll + "/MonKey Commander.dll.meta");
-                    }
-
-                    AssetDatabase.Refresh();
-                }
-            }
-        }
     }
 }

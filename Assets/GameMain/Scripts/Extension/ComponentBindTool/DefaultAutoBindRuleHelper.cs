@@ -24,14 +24,14 @@ namespace Fumiki
     {
         public string Prefix => "BD_";
 
-        private List<Type> BindTypes => new()
+        private List<Type> BindTypes => new List<Type>()
         {
             typeof(Transform),
         };
 
         private string GetFiledName(Transform target, string componentName)
         {
-            string filedName = $"{componentName}_{target.name[Prefix.Length..]}".Replace(' ', '_');
+            string filedName = $"{componentName}_{target.name.Substring(Prefix.Length)}".Replace(' ', '_');
             string regex = "^[a-zA-Z_][a-zA-Z0-9_]*$";
             if (!Regex.IsMatch(filedName, regex))
             {
@@ -63,7 +63,7 @@ namespace Fumiki
         }
     }
 
-    public class DefaultAuToBindRuleHelper : IAutoBindRuleHelper
+    public class DefaultAutoBindRuleHelper : IAutoBindRuleHelper
     {
         private List<IBindRule> m_BindRules = new List<IBindRule>()
         {

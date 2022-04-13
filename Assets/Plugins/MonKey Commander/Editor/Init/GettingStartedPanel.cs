@@ -24,6 +24,8 @@ public class GettingStartedPanel : EditorWindow
         MonKeySettings.Instance.MaxSortedSelectionSize = 200;
         MonKeyInternalSettings.Instance.MaxSortedSelectionSize = 200;
 
+    
+        
         if (forceShow)
             EditorPrefs.SetBool(WasShownID + Application.productName, false);
 
@@ -122,7 +124,7 @@ public class GettingStartedPanel : EditorWindow
 
         panel.welcomeTextStyle = new GUIStyle(MonkeyStyle.Instance.CommandNameStyle)
         {
-            fontSize = 12,
+            fontSize = 14,
             stretchWidth = true,
             alignment = TextAnchor.MiddleCenter,
             padding = new RectOffset(5, 5, 5, 5),
@@ -303,8 +305,10 @@ public class GettingStartedPanel : EditorWindow
     {
         if (monKeyBannerStyle == null)
         {
+            MonkeyStyle.Instance.InitDefaultStyle();
             InitGraphics(this);
         }
+        
         GUILayout.TextField("", monKeyBannerStyle);
         GUILayout.Label("", MonkeyStyle.Instance.HorizontalSideSecondLineStyle);
         GUILayout.Label("", MonkeyStyle.Instance.HorizontalSideLineStyle);

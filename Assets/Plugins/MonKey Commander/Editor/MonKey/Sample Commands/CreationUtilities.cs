@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
-using UnityEditor.Experimental.SceneManagement;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using GameObject = UnityEngine.GameObject;
@@ -230,8 +230,8 @@ namespace MonKey.Editor.Commands
 
             if (parents.Length == 0)
             {
-#if UNITY_2019
-                var stage = PrefabStageUtility.GetCurrentPrefabStage();
+#if UNITY_2019_1_OR_NEWER                
+                var stage = UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage();
                 if (stage != null)
                 {
                     parents = new[] { stage.prefabContentsRoot };
@@ -597,8 +597,7 @@ namespace MonKey.Editor.Commands
 
                     Object newObj;
                     GameObject go = null;
-#if UNITY_2019
-
+#if UNITY_2019_1_OR_NEWER
                     if (PrefabUtility.IsPartOfPrefabInstance(toDup))
                     {
                         GameObject prefabParent = (GameObject)
@@ -668,7 +667,7 @@ namespace MonKey.Editor.Commands
             foreach (Object o in Selection.objects)
             {
                 GameObject go = o as GameObject;
-#if UNITY_2019
+#if UNITY_2019_1_OR_NEWER                
                 if (go && !PrefabUtility.IsPartOfPrefabAsset(go))
                     continue;
 #else
@@ -1264,7 +1263,8 @@ namespace MonKey.Editor.Commands
 
                 GameObject newGo;
                 GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(toReplaceWith[i]);
-#if UNITY_2019
+#if UNITY_2019_1_OR_NEWER                
+                
                 if (PrefabUtility.GetPrefabAssetType(prefab) != PrefabAssetType.NotAPrefab)
                 {
                     newGo = (GameObject)PrefabUtility.InstantiatePrefab(prefab, go.scene);
@@ -1914,8 +1914,7 @@ namespace MonKey.Editor.Commands
             return selectedAssets.ToArray();
         }
 
-#if UNITY_2019
-
+#if UNITY_2019_1_OR_NEWER
         [Command("New Material", "Creates a new Material with a default shader", QuickName = "NM")]
         public static void NewMaterial(
             [CommandParameter("The shader to use", AutoCompleteMethodName = "ShaderTypes", ForceAutoCompleteUsage = false,

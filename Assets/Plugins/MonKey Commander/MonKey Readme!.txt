@@ -1,4 +1,4 @@
-MonKey version: 2021.0.3
+MonKey version: 2021.0.6
 
 Hi, and thanks for downloading MonKey!
 

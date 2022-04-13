@@ -477,7 +477,7 @@ namespace Monkey
             MonkeyEditorUtils.CallCommand("Rename");
         }
 
-        [MenuItem("Tools/MonKey Commander/Commands/Renaming/Rename Update Order Number %&F2")]
+        [MenuItem("Tools/MonKey Commander/Commands/Renaming/Rename Add Order Number %&F2")]
         [MenuItemCommandLink]
         public static void RenameUpdateOrderNumber()
         {
