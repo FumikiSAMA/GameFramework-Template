@@ -185,7 +185,7 @@ namespace Fumiki
         /// <summary>
         /// 运行
         /// </summary>
-        private void Run(CancellationToken token)
+        private void Run(System.Threading.CancellationToken token)
         {
             try
             {
@@ -209,7 +209,7 @@ namespace Fumiki
         /// 推进时间轮
         /// </summary>
         /// <param name="token"></param>
-        private void Step(CancellationToken token)
+        private void Step(System.Threading.CancellationToken token)
         {
             // 阻塞式获取，到期的时间槽才会出队
             if (m_DelayQueue.TryTake(out var slot, token))
