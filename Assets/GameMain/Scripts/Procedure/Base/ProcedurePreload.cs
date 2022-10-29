@@ -52,8 +52,8 @@ namespace Fumiki
                 }
             }
 
-            procedureOwner.SetData<VarInt32>("NextSceneId", GameEntry.Config.GetInt("Scene.Login"));
-            ChangeState<ProcedureChangeScene>(procedureOwner);
+            //procedureOwner.SetData<VarInt32>("NextSceneId", GameEntry.Config.GetInt("Scene.Login"));
+            //ChangeState<ProcedureChangeScene>(procedureOwner);
         }
 
         private void PreloadResources()
