@@ -1,9 +1,9 @@
 ﻿//------------------------------------------------------------
-// Metaverse
+// Fumiki Game Studio
 // Author: Fumiki
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2022-02-27 07:48:14.523
+// 生成时间：2023-04-29 14:27:54.202
 //------------------------------------------------------------
 
 using GameFramework;
@@ -17,22 +17,25 @@ using UnityGameFramework.Runtime;
 namespace Fumiki
 {
     /// <summary>
-    /// 场景配置表
+    /// 场景配置表。
     /// </summary>
     public class DRScene : DataRowBase
     {
         private int _id = 0;
 
         /// <summary>
-        /// 获取场景编号
+        /// 获取场景编号。
         /// </summary>
         public override int Id => _id;
 
         /// <summary>
-        /// 获取资源名称
+        /// 获取资源名称。
         /// </summary>
-        public string AssetName {get; private set;}
-
+        public string AssetName
+        {
+            get;
+            private set;
+        }
 
         public override bool ParseDataRow(string dataRowString, object userData)
         {
@@ -46,8 +49,7 @@ namespace Fumiki
             index++;
             _id = int.Parse(columnStrings[index++]);
             index++;
-            AssetName = columnStrings[index++];
-
+			AssetName = columnStrings[index++];
             GeneratePropertyArray();
             return true;
         }

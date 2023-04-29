@@ -13,29 +13,29 @@ namespace Fumiki.Editor.DataTableGenerator
         /// <summary>
         /// 数据表存放文件夹路径
         /// </summary>
-        public const string DataTableFolderPath = "Assets/Res/DataTables";
+        public const string DataTableFolderPath = "Assets/GameMain/DataTables";
 
-        public static readonly string ExcelsFolder = $"{Application.dataPath}/../Excels/";
+        public static readonly string ExcelsFolder = "Assets/GameMain/DataTables/Sources/";
 
         /// <summary>
         /// 数据表C#实体类生成文件夹路径
         /// </summary>
-        public const string CSharpCodePath = "Assets/Scripts/DataTableExtension/Runtime/DataTable";
+        public const string CSharpCodePath = "Assets/GameMain/Scripts/DataTable";
 
         /// <summary>
         /// 数据表C#实体类模板存放路径
         /// </summary>
-        public const string CSharpCodeTemplateFileName = "Assets/Res/Configs/DataTableCodeTemplate.txt";
+        public const string CSharpCodeTemplateFileName = "Assets/GameMain/Configs/DataTableCodeTemplate.txt";
 
         /// <summary>
         /// 数据表扩展类文件夹路径
         /// </summary>
-        public static readonly string ExtensionDirectoryPath = "Assets/Scripts/DataTableExtension/Runtime/Extensions";
+        public static readonly string ExtensionDirectoryPath = "Assets/GameMain/Scripts/DataTableExtension/Runtime/Extensions";
 
         /// <summary>
         /// 数据表命名空间
         /// </summary>
-        public const string NameSpace = "UGFExtensions";
+        public const string NameSpace = "Fumiki";
 
         /// <summary>
         /// 数据表中使用类型 所在的所有程序集

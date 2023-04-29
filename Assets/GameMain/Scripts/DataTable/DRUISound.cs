@@ -1,9 +1,9 @@
 ﻿//------------------------------------------------------------
-// Metaverse
+// Fumiki Game Studio
 // Author: Fumiki
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2022-02-27 07:48:14.533
+// 生成时间：2023-04-29 14:27:54.305
 //------------------------------------------------------------
 
 using GameFramework;
@@ -17,34 +17,43 @@ using UnityGameFramework.Runtime;
 namespace Fumiki
 {
     /// <summary>
-    /// 声音配置表
+    /// 声音配置表。
     /// </summary>
     public class DRUISound : DataRowBase
     {
         private int _id = 0;
 
         /// <summary>
-        /// 获取声音编号
+        /// 获取声音编号。
         /// </summary>
         public override int Id => _id;
 
         /// <summary>
-        /// 获取资源名称
+        /// 获取资源名称。
         /// </summary>
-        public string AssetName {get; private set;}
-
+        public string AssetName
+        {
+            get;
+            private set;
+        }
 
         /// <summary>
-        /// 获取优先级（默认0，128最高，-128最低）
+        /// 获取优先级（默认0，128最高，-128最低）。
         /// </summary>
-        public int Priority {get; private set;}
-
+        public int Priority
+        {
+            get;
+            private set;
+        }
 
         /// <summary>
-        /// 获取音量（0~1）
+        /// 获取音量（0~1）。
         /// </summary>
-        public float Volume {get; private set;}
-
+        public float Volume
+        {
+            get;
+            private set;
+        }
 
         public override bool ParseDataRow(string dataRowString, object userData)
         {
@@ -58,10 +67,9 @@ namespace Fumiki
             index++;
             _id = int.Parse(columnStrings[index++]);
             index++;
-            AssetName = columnStrings[index++];
-            Priority = int.Parse(columnStrings[index++]);
-            Volume = float.Parse(columnStrings[index++]);
-
+			AssetName = columnStrings[index++];
+			Priority = int.Parse(columnStrings[index++]);
+			Volume = float.Parse(columnStrings[index++]);
             GeneratePropertyArray();
             return true;
         }

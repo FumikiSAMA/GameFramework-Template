@@ -191,7 +191,7 @@ namespace Fumiki.Editor.DataTableGenerator
                 if (dataTableProcessor.IsIdColumn(i))
                 {
                     // 编号列
-                    stringBuilder.AppendLine("            m_Id = int.Parse(columnStrings[index++]);");
+                    stringBuilder.AppendLine("            _id = int.Parse(columnStrings[index++]);");
                     continue;
                 }
 
@@ -310,14 +310,14 @@ namespace Fumiki.Editor.DataTableGenerator
                 if (dataTableProcessor.IsIdColumn(i))
                 {
                     // 编号列
-                    stringBuilder.AppendLine("                    m_Id = binaryReader.Read7BitEncodedInt32();");
+                    stringBuilder.AppendLine("                    _id = binaryReader.Read7BitEncodedInt32();");
                     continue;
                 }
 
                 if (dataTableProcessor.IsIdColumn(i))
                 {
                     // 编号列
-                    stringBuilder.AppendLine("                m_Id = binaryReader.ReadInt32();");
+                    stringBuilder.AppendLine("                _id = binaryReader.ReadInt32();");
                     continue;
                 }
 

@@ -1,9 +1,9 @@
 ﻿//------------------------------------------------------------
-// Metaverse
+// Fumiki Game Studio
 // Author: Fumiki
 //------------------------------------------------------------
 // 此文件由工具自动生成，请勿直接修改。
-// 生成时间：2022-02-27 07:48:14.532
+// 生成时间：2023-04-29 14:27:54.273
 //------------------------------------------------------------
 
 using GameFramework;
@@ -17,40 +17,52 @@ using UnityGameFramework.Runtime;
 namespace Fumiki
 {
     /// <summary>
-    /// 界面配置表
+    /// 界面配置表。
     /// </summary>
     public class DRUIForm : DataRowBase
     {
         private int _id = 0;
 
         /// <summary>
-        /// 获取界面编号
+        /// 获取界面编号。
         /// </summary>
         public override int Id => _id;
 
         /// <summary>
-        /// 获取资源名称
+        /// 获取资源名称。
         /// </summary>
-        public string AssetName {get; private set;}
-
+        public string AssetName
+        {
+            get;
+            private set;
+        }
 
         /// <summary>
-        /// 获取界面组名称
+        /// 获取界面组名称。
         /// </summary>
-        public string UIGroupName {get; private set;}
-
+        public string UIGroupName
+        {
+            get;
+            private set;
+        }
 
         /// <summary>
-        /// 获取是否允许多个界面实例
+        /// 获取是否允许多个界面实例。
         /// </summary>
-        public bool AllowMultiInstance {get; private set;}
-
+        public bool AllowMultiInstance
+        {
+            get;
+            private set;
+        }
 
         /// <summary>
-        /// 获取是否暂停被其覆盖的界面
+        /// 获取是否暂停被其覆盖的界面。
         /// </summary>
-        public bool PauseCoveredUIForm {get; private set;}
-
+        public bool PauseCoveredUIForm
+        {
+            get;
+            private set;
+        }
 
         public override bool ParseDataRow(string dataRowString, object userData)
         {
@@ -64,11 +76,10 @@ namespace Fumiki
             index++;
             _id = int.Parse(columnStrings[index++]);
             index++;
-            AssetName = columnStrings[index++];
-            UIGroupName = columnStrings[index++];
-            AllowMultiInstance = bool.Parse(columnStrings[index++]);
-            PauseCoveredUIForm = bool.Parse(columnStrings[index++]);
-
+			AssetName = columnStrings[index++];
+			UIGroupName = columnStrings[index++];
+			AllowMultiInstance = bool.Parse(columnStrings[index++]);
+			PauseCoveredUIForm = bool.Parse(columnStrings[index++]);
             GeneratePropertyArray();
             return true;
         }
